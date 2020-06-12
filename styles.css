@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #224941 url('./photo/background.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+} 
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    transform: scale(1);
+}
+
+.gradient-circle1 {
+    background: conic-gradient(
+      #55b7a4 0%,
+      E4C7C4 40%,
+      #fff 40%,
+      #fff 60%,
+      #336d62 60%,
+      #2a5b52 100%
+    );
+    height: 120px;
+    width: 120px;
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+
+  .circle1 {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  } 
+
+  .pointer1 {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    display: block;
+  }
+
+
+  .pointer-container1 {
+    position: absolute;
+    top: -13px;
+    left: 46px;
+    width: 6px;
+    height: 63px;
+    animation: rotate 7.5s linear forwards infinite;
+    transform-origin: bottom center;
+  } 
+
+  .container.grow1 {
+      animation: grow 3s linear forwards;
+  }
+
+  .container.shrink1 {
+    animation: shrink 3s linear forwards;
+} 
+
+  @keyframes rotate {
+      from {
+          transform: rotate(0deg);
+      } 
+
+      to {
+          transform: rotate(360deg);
+      }
+  }
+
+  @keyframes grow {
+    from {
+        transform: scale(1);
+    } 
+
+    to {
+        transform: scale(1.2);
+    }
+} @keyframes shrink {
+    from {
+        transform: scale(1.2);
+    } 
+
+    to {
+        transform: scale(1);
+    }
+} 
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  position: relative;
+  margin-right: 10px;
+  /*margin-left: 10px;*/
+  margin-bottom: 10px;
+  transform: scale(1);
+}
+
+.gradient-circle2 {
+  background: conic-gradient(
+    #55b7a4 0%,
+    #4ca493 40%,
+    E4C7C4 40%,
+    #fff 60%,
+    #336d62 60%,
+    #2a5b52 100%
+  );
+  height: 120px;
+  width: 120px;
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.circle2 {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} 
+
+.pointer2 {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  display: block;
+}
+
+
+.pointer-container2 {
+  position: absolute;
+  top: -13px;
+  left: 46px;
+  width: 6px;
+  height: 63px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+} 
+
+.container.grow2 {
+    animation: grow 3s linear forwards;
+}
+
+.container.shrink2 {
+  animation: shrink 3s linear forwards;
+} 
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } 
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+  from {
+      transform: scale(1);
+  } 
+
+  to {
+      transform: scale(1.2);
+  }
+} @keyframes shrink {
+  from {
+      transform: scale(1.2);
+  } 
+
+  to {
+      transform: scale(1);
+  }
+} 
+
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+  transform: scale(1);
+}
+
+.gradient-circle3 {
+  background: conic-gradient(
+    #1b1d1d 0%,
+    E4C7C4 40%,
+    rgb(247, 42, 6) 40%,
+    rgb(136, 16, 8) 60%,
+    #ffa760c5 60%,
+    #2c1207 100%
+  );
+  height: 120px;
+  width: 120px;
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.circle3 {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} 
+
+.pointer3 {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  display: block;
+}
+
+
+.pointer-container3 {
+  position: absolute;
+  top: -13px;
+  left: 46px;
+  width: 6px;
+  height: 63px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+} 
+
+.container.grow3 {
+    animation: grow 3s linear forwards;
+}
+
+.container.shrink3 {
+  animation: shrink 3s linear forwards;
+} 
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } 
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+  from {
+      transform: scale(1);
+  } 
+
+  to {
+      transform: scale(1.2);
+  }
+} @keyframes shrink {
+  from {
+      transform: scale(1.2);
+  } 
+
+  to {
+      transform: scale(1);
+  }
+} 
